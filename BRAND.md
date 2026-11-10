@@ -3,7 +3,7 @@
 **Slug:** `shelfspeak`  
 **Tagline:** A 30-day content calendar built for your shop — not a generic template.  
 **Local port:** `5101`  
-**Status:** Local prototype only — no deploy, no real payments.
+**Status:** Live. Payments processed by Gumroad (Monthly or Quarterly).
 
 ## Audience persona
 Owners and managers of salons, cafes, clinics, contractors, and shops who know they “should post” but stall on what to say.
@@ -33,11 +33,11 @@ Prefer flat geometric icons, soft corners matching `--radius`, no stock-photo pe
 ## Sample copy lines
 - Hero CTA: “Build my content calendar”
 - Honesty: “No follower, viral, or booking guarantees — just a clear posting plan.”
-- Paywall: “Checkout coming soon: join founding list”
+- Paywall: “Start my plan” links to the Gumroad checkout URL.
 
 ## Do
-- Show intro **and** renewal prices.
-- Label founding list as no charge today.
+- Show Monthly and Quarterly prices, plus the renewal sentence, before checkout.
+- Save the customer’s email before sending them to Gumroad.
 - Keep disclaimers visible near plans.
 - Mobile-first quiz (one question per screen).
 
