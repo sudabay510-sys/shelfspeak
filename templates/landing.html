@@ -2,9 +2,10 @@
 {% block title %}{{ brand.name }} — {{ brand.tagline }}{% endblock %}
 {% block body_class %}page-landing{% endblock %}
 {% block content %}
-<section class="hero">
+<section class="hero ly-hero">
   <div class="wrap hero-grid">
     <div class="hero-copy">
+      <span class="ss-sun" aria-hidden="true"></span>
       <p class="eyebrow">{{ brand.eyebrow }}</p>
       <h1>{{ brand.hero_title }}</h1>
       <p class="lede">{{ brand.hero_lede }}</p>
@@ -13,16 +14,25 @@
         <a class="btn btn-lg btn-ghost" href="#how">See how it works</a>
       </div>
       <p class="tiny muted">{{ brand.honesty_line }}</p>
+      {% if brand.get('safety_note') %}
+<aside class="safety" role="note" aria-label="Safety note"><strong>{{ brand.safety_title or "Important" }}:</strong> {{ brand.safety_note }}</aside>
+{% endif %}
     </div>
-    <div class="hero-card" aria-hidden="true">
-      <div class="card-label">Sample plan peek</div>
-      <ul class="peek-list">
-        {% for b in brand.sample_peek %}
-        <li><span class="dot"></span>{{ b }}</li>
-        {% endfor %}
-      </ul>
-      <div class="card-fade">Full plan unlocks after your quiz</div>
+    <div class="ss-stack" aria-label="Sample plan peek">
+      <p class="card-label">Sample plan peek · tickets from a real plan</p>
+      {% for b in brand.sample_peek %}<div class="ss-ticket"><span class="ss-no">No. {{ "%02d"|format(loop.index) }}</span><p>{{ b }}</p></div>{% endfor %}
+      <p class="card-fade">Full plan unlocks after your quiz</p>
     </div>
+  </div>
+</section>
+<section class="section ss-window" aria-labelledby="ssw-h">
+  <div class="wrap">
+    <p class="eyebrow">Example week</p>
+    <h2 id="ssw-h">A shop-window week, not a content treadmill</h2>
+    <ol class="ss-week">
+      <li><b>Mon</b>Offer spotlight</li><li><b>Tue</b>Behind the counter</li><li class="rest"><b>Wed</b>Rest day</li><li><b>Thu</b>Answer a real question</li><li><b>Fri</b>Local nod</li><li class="rest"><b>Sat</b>Rest day</li><li class="rest"><b>Sun</b>Rest day</li>
+    </ol>
+    <p class="tiny muted">Illustration only. Your calendar is sized to the posts per week you choose in the quiz.</p>
   </div>
 </section>
 
