@@ -1,0 +1,23 @@
+/* shelfspeak layout compositions (phase 2). Loaded after identity.css. */
+.ly-hero{overflow:hidden}
+.ss-sun{position:absolute;right:-10px;top:-40px;width:180px;height:180px;border-radius:50%;background:var(--hi);mix-blend-mode:multiply;opacity:.85;z-index:0}
+.ly-hero .hero-copy{position:relative}.ly-hero .hero-copy>*:not(.ss-sun){position:relative;z-index:1}
+.ly-hero h1{font-size:clamp(2.5rem,6vw,4.6rem);line-height:1}
+.ss-stack{display:grid;gap:.9rem}
+.ss-ticket,.ss-tk{background:var(--card);border:2px solid var(--ink);border-radius:10px;box-shadow:5px 5px 0 var(--ink);padding:1rem 1.1rem 1rem 1.25rem;position:relative}
+.ss-ticket:nth-of-type(odd){transform:rotate(-1.6deg)}.ss-ticket:nth-of-type(even){transform:rotate(1.2deg);margin-left:1.5rem}
+.ss-ticket p{margin:0;font-weight:600}
+.ss-no{display:inline-block;font:400 .8rem var(--font-display);background:var(--accent);color:#fff;padding:.1rem .5rem;border-radius:999px;margin-bottom:.35rem}
+.ss-ticket::after,.ss-tk::after{content:"";position:absolute;left:-2px;right:-2px;top:2.6rem;border-top:2px dashed rgba(27,27,58,.25)}
+.ss-tk::after{display:none}
+.ss-week{list-style:none;padding:0;margin:0 0 .75rem;display:grid;grid-template-columns:repeat(7,1fr);gap:.6rem}
+.ss-week li{background:var(--card);border:2px solid var(--ink);border-radius:10px;padding:.8rem;min-height:6.5rem;font-weight:600}
+.ss-week li b{display:block;font:400 1.3rem var(--font-display);color:#A3211A}
+.ss-week li.rest{background:repeating-linear-gradient(45deg,#FFF3DF 0 8px,#FFE7BF 8px 16px);color:var(--muted)}
+.ss-qno{font:400 1.4rem var(--font-display);margin:0 0 .5rem;display:inline-block;background:var(--hi);border:2px solid var(--ink);padding:.15rem .8rem;border-radius:8px;transform:rotate(-2deg)}
+.ss-qno span{color:var(--muted);font-size:1rem}
+.ss-poster{position:relative;overflow:hidden;background:var(--card);border:3px solid var(--ink);border-radius:16px;padding:2rem;box-shadow:8px 8px 0 var(--accent);margin-bottom:1.5rem}
+.ss-poster>*:not(.ss-sun){position:relative;z-index:1}
+.page-results .plan-preview,.page-results .plan-full{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.page-results .plan-preview>h2,.page-results .plan-full>h2,.page-results .plan-full>p{grid-column:1/-1}
+@media (max-width:860px){.ss-week{grid-template-columns:repeat(2,1fr)}.ss-ticket:nth-of-type(even){margin-left:0}}
