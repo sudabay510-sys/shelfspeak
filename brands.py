@@ -503,7 +503,7 @@ BRANDS = {
         "checkout_url": "https://solvfix.gumroad.com/l/flqzi",
         "disclaimer_short": "Educational content planning only. No guarantees of reach, engagement, followers, or revenue.",
         "disclaimer_long": "ShelfSpeak provides educational content calendars and drafting aids. It does not guarantee marketing results. You are responsible for complying with platform rules and advertising laws. Payments are processed by Gumroad, not on this site.",
-        "font_url": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;700&family=Source+Sans+3:wght@400;600;700&display=swap",
+        "font_url": "https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Instrument+Sans:wght@400;500;600;700&display=swap",
         "questions": SS_Q,
         "generate_plan": ss_plan,
         "secret_env": "SHELFSPEAK_SECRET",
