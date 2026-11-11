@@ -65,3 +65,24 @@ Prefer flat geometric icons, soft corners matching `--radius`, no stock-photo pe
 
 ## Logo file
 `static/logo.svg`
+
+
+## Identity refresh (Nov 2026)
+
+Visual layer only (`static/identity.css`, `static/logo.svg`, Google Fonts URL). Quiz questions, plan generation, routes, pricing, checkout/unlock, and safety notes are unchanged.
+
+- **Concept:** Corner-shop risograph poster. A loud, friendly print-shop look: post ideas arrive as tilted paper tickets, and the calendar reads like a shop-window planner.
+- **Type:** Bagel Fat One (display) / Instrument Sans (body)
+- **Voice:** Talks like the friendly owner of the print shop next door: short, specific, encouraging, never hypey.
+- **Persona (design assumption, not research):** Dana, solo salon owner (assumption): Owns a 3-chair salon. Posts in bursts after a slow week, then goes quiet for a month.
+
+| Color | Hex |
+|---|---|
+| Cream paper | `#FFF3DF` |
+| Ink navy | `#1B1B3A` |
+| Riso red | `#C92A1E` |
+| Sunflower | `#FFC83D` |
+| Riso blue | `#2643B8` |
+| Muted ink | `#4A4A68` |
+
+Full brand guide, persona, and journey: `quiz-to-plan-redesign/products/shelfspeak/brand.html`.

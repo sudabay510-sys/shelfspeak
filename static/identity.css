@@ -1,0 +1,30 @@
+/* ShelfSpeak identity layer, Nov 2026 refresh: Corner-shop risograph poster. Loaded after brand.css; visual only. */
+:root{--bg:#FFF3DF;--bg-alt:#FFE7BF;--card:#FFFFFF;--ink:#1B1B3A;--muted:#4A4A68;--line:#1B1B3A;--accent:#C92A1E;--accent-2:#A3211A;--on-accent:#FFFFFF;--hi:#FFC83D;--radius:14px;--focus:#2643B8;
+--font-display:'Bagel Fat One', 'Arial Black', sans-serif;--font-body:'Instrument Sans', system-ui, sans-serif;--tracking:-0.01em;--cta-band-bg:#2643B8;--cta-band-ink:#FFFFFF;--cta-band-btn:#FFC83D;--cta-band-btn-ink:#1B1B3A;
+--shadow-card:0 14px 34px rgba(0,0,0,.10);--shadow-btn:none}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink)}
+.skip:focus{background:var(--card);color:var(--ink);outline:3px solid var(--focus)}
+.btn:focus-visible,.choice:focus-within,a:focus-visible,.input:focus{outline:3px solid var(--focus);outline-offset:2px}
+.choice:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.choice input{accent-color:var(--accent);width:1.15rem;height:1.15rem;flex:none}
+.choice{min-height:3.25rem}
+.btn{min-height:2.75rem}
+.nav a.btn-primary,.nav a.btn-primary:hover{color:var(--on-accent)}
+.safety{border-left-width:6px;border-left-style:solid}
+@media (max-width:560px){.choice{padding:.9rem 1rem}.quiz-q{font-size:1.45rem}}
+
+h1,h2,.amount{font-weight:400}
+.site-header{background:var(--bg);border-bottom:3px solid var(--ink)}
+.hero{background:radial-gradient(circle at 1px 1px,rgba(27,27,58,.14) 1.2px,transparent 1.6px) 0 0/14px 14px,var(--bg)}
+.hero h1{text-shadow:3px 3px 0 var(--hi)}
+.hero-card,.pill-card,.feature,.price-card,.plan-section,.steps li,.journey-card,.faq-item,.choice,.lock-banner{border:2px solid var(--ink);box-shadow:5px 5px 0 var(--ink);border-radius:12px}
+.hero-card{transform:rotate(-1.5deg);background:var(--card)}
+.hero-card::before{content:"";position:absolute;top:-10px;left:40%;width:90px;height:22px;background:var(--hi);opacity:.9;transform:rotate(3deg)}
+.btn{border-radius:999px;border:2px solid var(--ink)}.btn-primary{box-shadow:3px 3px 0 var(--ink)}
+.btn-primary:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.choice:has(input:checked){background:#FFF0C2;box-shadow:5px 5px 0 var(--accent);border-color:var(--ink)}
+.progress{height:.8rem;border:2px solid var(--ink);background:var(--card)}.progress-bar{background:repeating-linear-gradient(45deg,var(--accent) 0 8px,#A3211A 8px 16px)}
+.step-num,.journey-step{background:var(--hi);color:var(--ink);border:2px solid var(--ink)}
+.plan-section:nth-child(odd){transform:rotate(-.4deg)}.plan-section:nth-child(even){transform:rotate(.4deg)}
+.eyebrow{color:#A3211A}
+.safety{background:#FFF0C2;border-color:var(--ink);border-left-color:var(--accent)}
